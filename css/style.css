@@ -9597,9 +9597,16 @@ textarea.form-control {
         display: none;
     }
     .ml-8 {
-        margin-left: 8px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .pd-0 {
         padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 991.99px) {
+    .pb {
+        padding-bottom: 3rem !important;
     }
 }
