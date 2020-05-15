@@ -35,7 +35,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav nav ml-auto">
+            <ul class="navbar-nav nav ml-auto" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
                 <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
                 <li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
@@ -49,8 +49,8 @@
     </div>
 </nav>
 <section id="home-section" class="hero">
-    <div class="home-slider  owl-carousel">
-        <div class="slider-item ">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
@@ -58,7 +58,7 @@
                     <!--<div class="one-third order-md-last img" style="background-image:url(images/Sushmita_Paul_Formal.jpg);">
                         <div class="overlay"></div>
                     </div>-->
-                    <div>
+                    <div class="hide-on-mobile-portrait">
                         <img src="images/Sushmita_Paul_Formal.jpg" style="width: 80%;">
                     </div>
                     <div class="one-forth d-flex  align-items-center ftco-animate"
@@ -68,7 +68,10 @@
                             <h1 class="mb-4 mt-3">I'm <span>Sushmita Paul</span></h1>
                             <h2 class="mb-4">Cybersecurity Graduate student at Northeastern University</h2>
                             <!--<a href="#" class="btn-custom"><span>HIRE ME</span></a>-->
-                            <a href="https://github.com/Sushmitapl/resume/blob/master/Sushmita_Paul_Resume.pdf" class="btn-custom"><span>GET CV</span></a>
+                            <h4><a href="https://github.com/Sushmitapl/resume/blob/master/Sushmita_Paul_Resume.pdf"
+                                   class="btn-custom"><span>GET CV</span></a>
+                                <a href="https://www.linkedin.com/in/paulsushmita/"><span class="icon-linkedin"></span></a>
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -77,11 +80,11 @@
     </div>
 </section>
 
-<section class="ftco-about ftco-counter img ftco-section" id="about-section">
+<section class="ftco-about ftco-counter img ftco-section pd-0" id="about-section">
     <div class="container">
         <div class="row d-flex">
             <div class="col-md-6 col-lg-12 pl-lg-5 py-5">
-                <div class="row justify-content-start pb-3">
+                <div class="row justify-content-start pb-3" style="text-align: justify;">
                     <div class="col-md-12 heading-section ftco-animate">
                         <!--<span class="subheading">Welcome</span>-->
                         <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
@@ -176,22 +179,23 @@
             </div>
             <div class="col-md-4 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <img src="images/autopsy_logo.png" width="120">
+                    <img src="images/autopsy_logo.png" width="100">
+                    <p style="color: black;"><strong>Autopsy</strong></p>
                 </div>
             </div>
             <div class="col-md-4 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <h3 style="font-size: 30px">TCP/IP</h3>
+                    <h3 style="font-size: 27px">TCP/IP</h3>
                 </div>
             </div>
             <div class="col-md-4 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <h3 style="font-size: 30px">Penetration Testing</h3>
+                    <h3 style="font-size: 27px">Penetration Testing</h3>
                 </div>
             </div>
             <div class="col-md-4 animate-box">
                 <div class="progress-wrap ftco-animate">
-                    <h3 style="font-size: 30px">Cyber Forensics</h3>
+                    <h3 style="font-size: 27px">Cyber Forensics</h3>
                 </div>
             </div>
         </div>
@@ -209,7 +213,8 @@
                     </span>-->
                     <div class="desc">
                         <h3 class="mb-5">
-                            <a href="#">Penetration Testing and Gaining Access (Northeastern University)</a>
+                            <!--<a href="#">Penetration Testing and Gaining Access (Northeastern University)</a>-->
+                            Penetration Testing and Gaining Access (Northeastern University)
                             <p style="margin-top: 10px">Spring 2020</p>
                         </h3>
                         <p>Performed reconnaissance on a test application to gain access to the Operating system and
@@ -224,7 +229,8 @@
                     </span>-->
                     <div class="desc">
                         <h3 class="mb-5">
-                            <a href="#">Forensic Case Study of Windows Laptop(Northeastern University)</a>
+                            <!--<a href="#">Forensic Case Study of Windows Laptop(Northeastern University)</a>-->
+                            Forensic Case Study of Windows Laptop(Northeastern University)
                             <p style="margin-top: 10px">Spring 2020</p>
                         </h3>
                         <p>Performed an analysis on a digital evidence to determine case in-hand using windows registry
@@ -239,7 +245,8 @@
                     </span>-->
                     <div class="desc">
                         <h3 class="mb-5">
-                            <a href="#">Firewall and iptables (Northeastern University)</a>
+                            <!--<a href="#">Firewall and iptables (Northeastern University)</a>-->
+                            Firewall and iptables (Northeastern University)
                             <p style="margin-top: 10px">Fall 2019</p>
                         </h3>
                         <p>Set up firewall and routed packets using iptables to protect internal network from the
@@ -254,7 +261,8 @@
                     </span>-->
                     <div class="desc">
                         <h3 class="mb-5">
-                            <a href="#">Enterprise Network Architecture Research Paper (Northeastern University)</a>
+                            <!--<a href="#">Enterprise Network Architecture Research Paper (Northeastern University)</a>-->
+                            Enterprise Network Architecture Research Paper (Northeastern University)
                             <p style="margin-top: 10px">Fall 2019</p>
                         </h3>
                         <p>Wrote a research paper on designing an enterprise network architecture, includes network
@@ -271,7 +279,8 @@
                     </span>-->
                     <div class="desc">
                         <h3 class="mb-5">
-                            <a href="#">Cryptographic Schemes (Northeastern University)</a>
+                            <!--<a href="#">Cryptographic Schemes (Northeastern University)</a>-->
+                            Cryptographic Schemes (Northeastern University)
                             <p style="margin-top: 10px">Fall 2019</p>
                         </h3>
                         <p>Devised and implemented cryptographic schemes to encrypt and decrypt files using bash
@@ -305,7 +314,7 @@
                 <h2 class="mb-4">My Work Experience</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row ml-8">
             <div class="ftco-animate">
                 <h4>
                     <img src="images/GRI.png" width="40">
@@ -315,39 +324,38 @@
                 <h6>Jan 2020 - Present</h6>
                 <h6>Boston, MA</h6>
                 <ul style="margin-top: 5px; margin-bottom: 0px;">
-                    <li>Implemented security controls for the users and the administrators considering the network
+                    <li style="padding-bottom: 8px;">Implemented security controls for the users and the administrators considering the network
                         architecture hosted in Amazon Web Services (AWS) using Network Access Control Rules (NACL) and
                         Security groups which will reduce the outsiders, as well as insiders, attack by 20%.
                     </li>
-                    <li>Designed and implemented security controls for the internal email application hosted on Amazon
+                    <li style="padding-bottom: 8px;">Designed and implemented security controls for the internal email application hosted on Amazon
                         Web Service (AWS) EC2 instance along with monitoring of mail traffic which will reduce the
                         phishing emails by 40%.
                     </li>
-                    <li>Implemented the internal and external webpage of the application hosted on Amazon Web Service
+                    <li style="padding-bottom: 8px;">Implemented the internal and external webpage of the application hosted on Amazon Web Service
                         (AWS) using Route 53 and EC2 instance.
                     </li>
-                    <li>Updating and Maintaining the certificate of the application website.</li>
-                    <li>Designed and developed a webpage application using Django for Hospitals to place a request for
+                    <li style="padding-bottom: 8px;">Updating and Maintaining the certificate of the application website.</li>
+                    <li style="padding-bottom: 8px;">Designed and developed a webpage application using Django for Hospitals to place a request for
                         inventories needed to treat an increasing number of COVID-19 patients.
                     </li>
                 </ul>
             </div>
-            <div class="row">
-                <div class="ftco-animate" style="padding-top: 30px;">
-                    <h4>
-                        <img src="images/Northeastern_logo.png" width="40">
-                        <strong>Northeastern University</strong>
-                    </h4>
-                    <h5>Teaching Assistant</h5>
-                    <h6>Jan 2020 - Apr 2020</h6>
-                    <h6>Boston, MA</h6>
-                    <ul style="margin-top: 5px; margin-bottom: 0px;">
-                        <li>Assisted Professor in the course "Cyberspace Technology and Applications" to prepare assignments and its solutions.
-                        </li>
-                        <li>Provided positive learning and guidance techniques to students.
-                        </li>
-                    </ul>
-                </div>
+            <div class="ftco-animate" style="padding-top: 30px;">
+                <h4>
+                    <img src="images/Northeastern_logo.png" width="40">
+                    <strong>Northeastern University</strong>
+                </h4>
+                <h5>Teaching Assistant</h5>
+                <h6>Jan 2020 - Apr 2020</h6>
+                <h6>Boston, MA</h6>
+                <ul style="margin-top: 5px; margin-bottom: 0px;">
+                    <li style="padding-bottom: 8px;">Assisted Professor in the course "Cyberspace Technology and Applications" to prepare assignments
+                        and its solutions.
+                    </li>
+                    <li style="padding-bottom: 8px;">Provided positive learning and guidance techniques to students.
+                    </li>
+                </ul>
             </div>
             <div class="ftco-animate" style="padding-top: 30px;">
                 <h4>
@@ -359,21 +367,21 @@
                     <h6>Jul 2018 - Aug 2019</h6>
                     <h6>Pune, Maharashtra, India</h6>
                     <ul style="margin-top: 5px; margin-bottom: 0px;">
-                        <li>Led a team to deploy a project, which included the development of Restful API using Java
+                        <li style="padding-bottom: 8px;">Led a team to deploy a project, which included the development of Restful API using Java
                             with Spring Framework for incentive detail page allowing customers to check respective
                             incentive details, decreasing the turn around time by 25%.
                         </li>
-                        <li>Developed a Proof of Concept using AWS which consisted of scheduling a reminder for the
+                        <li style="padding-bottom: 8px;">Developed a Proof of Concept using AWS which consisted of scheduling a reminder for the
                             members to record their health vitals using Alexa and saving the recorded vitals in Dynamo
                             DB. This will enable the providers (Doctors) to remotely monitor the vitals of the members
                             (Patients).
                         </li>
-                        <li>Designed and developed the Web page of Member Portal using AngularJS and Bootstrap for
+                        <li style="padding-bottom: 8px;">Designed and developed the Web page of Member Portal using AngularJS and Bootstrap for
                             customers to view their treatment, the funds claimed by the provider and details of the
                             payment in terms of copay, deductibles, and coinsurance, thus improving the user Experience
                             by 40% as per customer’s review.
                         </li>
-                        <li>Worked on the migration of applications from ANT-build to MAVEN.</li>
+                        <li style="padding-bottom: 8px;">Worked on the migration of applications from ANT-build to MAVEN.</li>
                     </ul>
                 </div>
                 <div style="margin-top: 20px;">
@@ -381,14 +389,14 @@
                     <h6>Pune, Maharashtra, India</h6>
                     <h6>Oct 2016 – Jun 2018</h6>
                     <ul style="margin-top: 5px; margin-bottom: 0px;">
-                        <li>Implemented functionality change in the claims and explanation of benefits web page of the
+                        <li style="padding-bottom: 8px;">Implemented functionality change in the claims and explanation of benefits web page of the
                             provider website application using JSP which reduced the number of tickets raised by 30% and
                             enabled the providers to visit the funds they ought to get from the customer.
                         </li>
-                        <li>Developed an incentive web page in the Member’s Portal using AngularJS and Bootstrap which
+                        <li style="padding-bottom: 8px;">Developed an incentive web page in the Member’s Portal using AngularJS and Bootstrap which
                             will enable the member to view the earned, active, and expired incentives.
                         </li>
-                        <li>Implemented the login flow change of the application in backend Rest API using Java and
+                        <li style="padding-bottom: 8px;">Implemented the login flow change of the application in backend Rest API using Java and
                             frontend using AngularJS which increased the awareness of contract terms among the users by
                             30%.
                         </li>
@@ -399,19 +407,19 @@
                     <h6>Pune, Maharashtra, India</h6>
                     <h6>Nov 2014 – Sep 2016</h6>
                     <ul style="margin-top: 5px; margin-bottom: 0px;">
-                        <li>Provided support for the technical and functional issues in Production for Providers website
+                        <li style="padding-bottom: 8px;">Provided support for the technical and functional issues in Production for Providers website
                             application, Voice application, and Cost Transparency application of Health Insurance client
                             using IBM RAD, Soap UI, and IBM DB2 which includes interacting with the client, conveying
                             the designed methodology and implementing the solution.
                         </li>
-                        <li>Created Break-Fix SR to implement the solution of the issues raised as a ticket in
+                        <li style="padding-bottom: 8px;">Created Break-Fix SR to implement the solution of the issues raised as a ticket in
                             ServiceNow in the production.
                         </li>
-                        <li>Monitored the UNIX batches using WinSCP, as well as resolved the critical failures of the
+                        <li style="padding-bottom: 8px;">Monitored the UNIX batches using WinSCP, as well as resolved the critical failures of the
                             report and claim data generation using Shell scripts to ensure the timely delivery of the
                             reports to the members.
                         </li>
-                        <li>Provided technical support during application production deployment by monitoring the logs
+                        <li style="padding-bottom: 8px;">Provided technical support during application production deployment by monitoring the logs
                             and fixing the code break during the deployment.
                         </li>
                     </ul>
@@ -422,75 +430,93 @@
 </section>
 
 <!--================ Start Testimonial Area =================-->
-<div class="testimonial_area section_gap_bottom ftco-animate">
-	<div class="container">
-		<div class="row justify-content-center">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-12 heading-section text-center">
-                    <h2 class="mb-4">Colleagues say about me</h2>
-					<!--<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
-						beginning signs open god you're gathering ithe</p>-->
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="testi_slider owl-carousel">
-				<div class="testi_item">
-					<div class="row">
-						<!--<div class="col-lg-4">
-							<img src="img/testimonials/t1.jpg" alt="">
-						</div>-->
-						<div class="col-lg-8">
-							<div class="testi_text">
-                                <h4><strong>Rachit Gupta</strong></h4>
-								<p>Sushmita is wonderful to work with, and has exceptional expertise in leadership, coaching, motivation. She is dedicated, self-motivated, methodical, and very capable. She is not only a reliable and forward thinking colleague but also an inspiring team player. As a team member or a leader, Sushmita earns my highest recommendation. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testi_item">
-					<div class="row">
-						<!--<div class="col-lg-4">
-							<img src="img/testimonials/t2.jpg" alt="">
-						</div>-->
-						<div class="col-lg-8">
-							<div class="testi_text">
-                                <h4><strong>Rajeev Upadhyay</strong></h4>
-								<p>Sushmita Paul is an amazing person to work with. Sushmita's technical knowledge and people management skills are exceptional. Sushmita understands the bigger picture and business value in every piece of work that she delivers. I would highly recommend Sushmita and wish her the very best in her future endeavors. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testi_item">
-					<div class="row">
-						<!--<div class="col-lg-4">
-							<img src="img/testimonials/t1.jpg" alt="">
-						</div>-->
-						<div class="col-lg-8">
-							<div class="testi_text">
-                                <h4><strong>Sarika Chougale</strong></h4>
-								<p>I have known Sushmita for last 5 years. She is a calm, responsible and down to earth person. The most noteworthy part of her character is her hardworking nature. She has shown immense talent and flexibility for the whole period she has been my colleague. I would gladly and wholeheartedly recommend her as her senior colleague. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="testi_item">
-					<div class="row">
-						<!--<div class="col-lg-4">
-							<img src="img/testimonials/t2.jpg" alt="">
-						</div>-->
-						<div class="col-lg-8">
-							<div class="testi_text">
-                                <h4><strong>Arpit Rathore</strong></h4>
-								<p>Sushmita has been a consistent performer and impeccable team player. She has proved her technical competence by handling multiple projects involving challenging deliverables. Her ability to learn new technologies in limited time has helped the team to conceive efficient and improved solutions for business problems. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<section class="ftco-section ftco-project">
+    <div class="testimonial_area section_gap_bottom ftco-animate">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 heading-section text-center">
+                        <h2 class="mb-4">Colleagues say about me</h2>
+                        <!--<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+                            beginning signs open god you're gathering ithe</p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi_slider owl-carousel">
+                    <div class="testi_item">
+                        <div class="row">
+                            <!--<div class="col-lg-4">
+                                <img src="img/testimonials/t1.jpg" alt="">
+                            </div>-->
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4><strong>Rachit Gupta</strong></h4>
+                                    <p>Sushmita is wonderful to work with, and has exceptional expertise in leadership,
+                                        coaching, motivation. She is dedicated, self-motivated, methodical, and very
+                                        capable. She is not only a reliable and forward thinking colleague but also an
+                                        inspiring team player. As a team member or a leader, Sushmita earns my highest
+                                        recommendation. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <!--<div class="col-lg-4">
+                                <img src="img/testimonials/t2.jpg" alt="">
+                            </div>-->
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4><strong>Rajeev Upadhyay</strong></h4>
+                                    <p>Sushmita Paul is an amazing person to work with. Sushmita's technical knowledge
+                                        and people management skills are exceptional. Sushmita understands the bigger
+                                        picture and business value in every piece of work that she delivers. I would
+                                        highly recommend Sushmita and wish her the very best in her future
+                                        endeavors. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <!--<div class="col-lg-4">
+                                <img src="img/testimonials/t1.jpg" alt="">
+                            </div>-->
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4><strong>Sarika Chougale</strong></h4>
+                                    <p>I have known Sushmita for last 5 years. She is a calm, responsible and down to
+                                        earth person. The most noteworthy part of her character is her hardworking
+                                        nature. She has shown immense talent and flexibility for the whole period she
+                                        has been my colleague. I would gladly and wholeheartedly recommend her as her
+                                        senior colleague. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <!--<div class="col-lg-4">
+                                <img src="img/testimonials/t2.jpg" alt="">
+                            </div>-->
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4><strong>Arpit Rathore</strong></h4>
+                                    <p>Sushmita has been a consistent performer and impeccable team player. She has
+                                        proved her technical competence by handling multiple projects involving
+                                        challenging deliverables. Her ability to learn new technologies in limited time
+                                        has helped the team to conceive efficient and improved solutions for business
+                                        problems. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--================ End Testimonial Area =================-->
 
 
@@ -507,7 +533,7 @@
 				</div>
 			</div>
 		</div>-->
-        <div class="row">
+        <div class="row" style="margin-top: 30px;">
             <div class="col-md-12 text-center">
 
                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
